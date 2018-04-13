@@ -32,8 +32,8 @@
 - Qual o valor máximo para projetos de [pessoa física](categoria) ou [empresário individual](categoria)?
 - Qual o maior valor para projetos de [pessoa física](categoria) ou [empresário individual](categoria)?
 - Qual é o preço máximo por projeto?
-- Qual é o maior valor por projeto?
-- [projeto](importante)
+- Qual é o maior valor por [projeto]?
+- projeto
 - empresas
 - emprego
 - empresa
@@ -41,6 +41,8 @@
 - [pessoa física](categoria)
 - [empresário individual](categoria)
 - sobre valor máximo de projetos
+- Valor de projeto
+- Valor sobre projetos
 
 ## intent:ingressos
 - Qual o valor máximo de [comercialização](item) dos [ingressos](item)?
@@ -59,7 +61,8 @@
 - [comercialização](item)
 - [comercializações](item)
 - [150](valor)
-- sobre valor máximo os ingressos
+- sobre valor máximo dos [ingressos](item)
+- Valor de [ingressos](item)
 
 ## intent:vinculo_de_propostas
 - Como faço para vincular uma [proposta](item) ao [CPF](documento) do responsável?
@@ -67,7 +70,7 @@
 - vincular [proposta](item)
 - vinculo de [proposta](item)
 - vinculo de [propostas](item)
-- sobre vinculo de propostas
+- sobre vinculo de [propostas](item)
 
 ## intent:cadastro_de_rubricas
 - Estou preenchendo a [planilha orçamentária](documento), porém, o sistema não me
@@ -79,6 +82,10 @@ permite cadastrar as [rubricas](item) em custos vinculados. Como resolver?
 - cadastro de [rubricas](item)
 - [rubricas](item)
 - sobre cadastro de rubricas
+- cadastrar rúbricas
+- rubricas
+- cadastrando rubricas
+- erro no castastro de rubricas
 
 ## intent:visualizar_propostas_projetos
 - Não consigo achar minha [proposta](item) no sistema, porém a mesma está ativa.
@@ -127,13 +134,26 @@ citado. Como resolver?
 - sobre valor por beneficiário
 
 ## intent:definicao_modal
+- Calculo de [modal](definição)
+- Calcular a [modal](definição)
+- definir [modal](definição)
 - O que é a [modal](definição)?
 - Como a [modal](definição) é calculada?
 - [modal](definição)
+- Modal
+- sobre Modal
+- sobre definicação de [modal](definição)
 - O que seria a [modal](definição)?
 - Não sei o que é a [modal](definição)
 - tenho dúvidas sobre a [modal](definição)
 - sobre [modal](definição)
+- duvidas sobre [modal](definição)
+- quero saber sobre [modal](definição)
+- Sobre o assunto [modal](definição)
+- A respeito de [modal](definição)
+- A respeito de definir [modal](definição)
+- A respeito de definição de [modal](definição)
+- A respeito do assunto [modal](definição)
 
 ## intent:fechando_sem_salvar
 - Preenchi minha [proposta](item) toda e fechei o sistema. Ao retornar percebi
@@ -194,18 +214,6 @@ sumido. O que faço?
 - [Custo de Auditoria](tipo de custo)
 - sobre [Custo de Auditoria](tipo de custo)
 
-## synonym:ç
-+ c
-
-## synonym:í
-+ i
-
-## synonym:á
-+ a
-
-## synonym:ê
-+ e
-
 ## synonym:pessoa jurídica
 + pessoa juridica
 
@@ -232,6 +240,9 @@ sumido. O que faço?
 ## synonym:pae
 + pai
 + vei
+
+## synonym:rubrica
++ rúbrica
 
 ## synonym:máximo
 + maximo

@@ -18,46 +18,16 @@ from rasa_core.policies.memoization import MemoizationPolicy
 
 logger = logging.getLogger(__name__)
 
-
-#class RestaurantAPI(object):
-#    def search(self, info):
-#        return "papi's pizza place"
-
-
-#class ActionSearchRestaurants(Action):
-#    def name(self):
-#        return 'action_search_restaurants'
-#
-#    def run(self, dispatcher, tracker, domain):
-#        dispatcher.utter_message("looking for restaurants")
-#        restaurant_api = RestaurantAPI()
-#        restaurants = restaurant_api.search(tracker.get_slot("cuisine"))
-#        return [SlotSet("matches", restaurants)]
-#
-#
-#class ActionSuggest(Action):
-#    def name(self):
-#        return 'action_suggest'
-#
-#    def run(self, dispatcher, tracker, domain):
-#        dispatcher.utter_message("here's what I found:")
-#        dispatcher.utter_message(tracker.get_slot("matches"))
-#        dispatcher.utter_message("is it ok for you? "
-#                                 "hint: I'm not going to "
-#                                 "find anything else :)")
-#        return []
-#
-
 def train_dialogue(domain_file="rouana_domain.yml",
                    model_path="models/dialogue",
-                   training_data_file="data/babi_stories.md"):
+                   training_data_file="data/rouana_stories.md"):
     agent = Agent(domain_file,
-                  policies=[MemoizationPolicy(), RouanaPolicy()])
+                  policies=[MemoizationPolicy(),RouanaPolicy()])
 
     agent.train(
             training_data_file,
             max_history=3,
-            epochs=400,
+            epochs=300,
             batch_size=100,
             validation_split=0.2
     )
